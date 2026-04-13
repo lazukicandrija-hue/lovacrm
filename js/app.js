@@ -26,7 +26,7 @@ const routes = {
   'tim':          { render: renderTeam,         title: 'Tim',              subtitle: 'Članovi tima i raspodela zarade' },
   'zarada':       { render: renderEarnings,     title: 'Zarada',           subtitle: 'Praćenje prihoda i isplata' },
   'proksiji':     { render: renderProxies,      title: 'Proksiji',         subtitle: 'Proxy serveri za naloge' },
-  'emailovi':     { render: renderEmails,       title: 'Emailovi',         subtitle: 'Outreach i komunikacija sa kampanjama' },
+  'emailovi':     { render: renderEmails,       title: 'Emailovi',         subtitle: 'Skladište email naloga i kredencijala' },
 };
 
 function router() {
