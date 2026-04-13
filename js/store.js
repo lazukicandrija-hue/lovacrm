@@ -105,9 +105,9 @@ class Store {
 
     // --- Proxies ---
     const proxies = [
-      { id: 'proxy_1', name: '4G Mobile US #1', type: 'Mobile', location: 'SAD', monthlyCost: 30, status: 'Active', expiryDate: '2025-06-15', createdAt: '2025-03-01T10:00:00Z' },
-      { id: 'proxy_2', name: 'Resi UK #1', type: 'Residential', location: 'UK', monthlyCost: 15, status: 'Active', expiryDate: '2025-07-01', createdAt: '2025-03-01T10:00:00Z' },
-      { id: 'proxy_3', name: 'DC Germany #1', type: 'Datacenter', location: 'Nemačka', monthlyCost: 5, status: 'Expired', expiryDate: '2025-04-01', createdAt: '2025-01-01T10:00:00Z' },
+      { id: 'proxy_1', name: '4G Mobile US #1', type: 'Mobile', location: 'SAD', usState: 'California', proxyAddress: 'us-ca.mobileproxy.io:8080', proxyUser: 'lova_user1', proxyPass: 'M0b1le_CA_2025!', monthlyCost: 30, status: 'Active', expiryDate: '2025-06-15', createdAt: '2025-03-01T10:00:00Z' },
+      { id: 'proxy_2', name: 'Resi US #1', type: 'Residential', location: 'SAD', usState: 'New York', proxyAddress: 'us-ny.resiproxy.io:3128', proxyUser: 'lova_resi1', proxyPass: 'R3si_NY_2025!', monthlyCost: 15, status: 'Active', expiryDate: '2025-07-01', createdAt: '2025-03-01T10:00:00Z' },
+      { id: 'proxy_3', name: '4G Mobile US #2', type: 'Mobile', location: 'SAD', usState: 'Texas', proxyAddress: 'us-tx.mobileproxy.io:8080', proxyUser: 'lova_user2', proxyPass: 'M0b1le_TX_OLD', monthlyCost: 30, status: 'Expired', expiryDate: '2025-04-01', createdAt: '2025-01-01T10:00:00Z' },
     ];
     localStorage.setItem(STORE_KEYS.proxies, JSON.stringify(proxies));
 
