@@ -74,6 +74,7 @@ export function statusBadge(status) {
     'rejected': 'rejected', 'warming-up': 'warming', 'banned': 'banned',
     'inactive': 'inactive', 'removed': 'removed', 'viral': 'viral',
     'pending': 'pending', 'paid': 'paid', 'withdrawn': 'withdrawn',
+    'unread': 'expired', 'read': 'draft', 'sent': 'submitted', 'replied': 'approved',
   };
   const badgeCls = map[cls] || 'draft';
   return `<span class="badge badge-${badgeCls}">${status}</span>`;

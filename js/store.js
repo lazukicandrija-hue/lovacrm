@@ -11,6 +11,7 @@ const STORE_KEYS = {
   team:         'lova_team',
   earnings:     'lova_earnings',
   proxies:      'lova_proxies',
+  emails:       'lova_emails',
 };
 
 function generateId() {
@@ -197,6 +198,17 @@ class Store {
       { id: 'earn_8', campaignId: 'camp_3', postId: 'post_8', teamMemberId: 'team_2', grossAmount: 315, percentage: 30, netAgency: 220.5, netMember: 94.5, status: 'Paid', paymentDate: '2025-03-15', paymentMethod: 'PayPal', createdAt: '2025-02-18T10:00:00Z' },
     ];
     localStorage.setItem(STORE_KEYS.earnings, JSON.stringify(earnings));
+
+    // --- Emails ---
+    const emails = [
+      { id: 'email_1', subject: 'Prijava za Higgsfield kampanju', to: 'partnerships@higgsfield.com', from: 'andrija@lova.agency', campaignId: 'camp_1', type: 'Outreach', status: 'Replied', sentDate: '2025-02-25T09:00:00Z', body: 'Poštovani, zainteresovani smo za saradnju na See Dance kampanju...', reply: 'Hvala na prijavi! Prihvaćeni ste.', createdAt: '2025-02-25T09:00:00Z' },
+      { id: 'email_2', subject: 'Pitanje oko watermark fajla', to: 'support@higgsfield.com', from: 'andrija@lova.agency', campaignId: 'camp_1', type: 'Support', status: 'Replied', sentDate: '2025-03-05T11:00:00Z', body: 'Da li mozete ponovo poslati watermark fajl u PNG formatu?', reply: 'Naravno, evo u prilogu.', createdAt: '2025-03-05T11:00:00Z' },
+      { id: 'email_3', subject: 'Prijava za CapCut Templates kampanju', to: 'apply@capcut-rewards.com', from: 'andrija@lova.agency', campaignId: 'camp_2', type: 'Outreach', status: 'Sent', sentDate: '2025-03-14T10:00:00Z', body: 'Zdravo, LOVA Clipping Agency se prijavljuje za CapCut Templates kampanju...', reply: '', createdAt: '2025-03-14T10:00:00Z' },
+      { id: 'email_4', subject: 'Zahtev za isplatu - Mart 2025', to: 'payments@whop.com', from: 'andrija@lova.agency', campaignId: '', type: 'Payment', status: 'Replied', sentDate: '2025-04-01T08:00:00Z', body: 'Molimo vas za isplatu zarade za mart mesec. Invoice u prilogu.', reply: 'Isplata je procesuirana. Očekujte sredstva u roku od 3 dana.', createdAt: '2025-04-01T08:00:00Z' },
+      { id: 'email_5', subject: 'Nova kampanja - AI Video Generator', to: 'andrija@lova.agency', from: 'campaigns@whop.com', campaignId: '', type: 'Inbound', status: 'Unread', sentDate: '2025-04-12T14:00:00Z', body: 'Imamo novu kampanju koja bi mogla biti zanimljiva za vaš tim...', reply: '', createdAt: '2025-04-12T14:00:00Z' },
+      { id: 'email_6', subject: 'Odbijen klip - nedovoljna rezolucija', to: 'andrija@lova.agency', from: 'review@higgsfield.com', campaignId: 'camp_1', type: 'Inbound', status: 'Read', sentDate: '2025-03-14T16:00:00Z', body: 'Klip "Rejected Dance Clip" ne zadovoljava minimalni zahtev za 4K rezoluciju.', reply: '', createdAt: '2025-03-14T16:00:00Z' },
+    ];
+    localStorage.setItem(STORE_KEYS.emails, JSON.stringify(emails));
   }
 }
 

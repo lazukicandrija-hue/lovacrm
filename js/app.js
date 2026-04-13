@@ -13,6 +13,7 @@ import { renderPosts } from './views/posts.js';
 import { renderTeam } from './views/team.js';
 import { renderEarnings } from './views/earnings.js';
 import { renderProxies } from './views/proxies.js';
+import { renderEmails } from './views/emails.js';
 
 // Route map
 const routes = {
@@ -25,6 +26,7 @@ const routes = {
   'tim':          { render: renderTeam,         title: 'Tim',              subtitle: 'Članovi tima i raspodela zarade' },
   'zarada':       { render: renderEarnings,     title: 'Zarada',           subtitle: 'Praćenje prihoda i isplata' },
   'proksiji':     { render: renderProxies,      title: 'Proksiji',         subtitle: 'Proxy serveri za naloge' },
+  'emailovi':     { render: renderEmails,       title: 'Emailovi',         subtitle: 'Outreach i komunikacija sa kampanjama' },
 };
 
 function router() {
